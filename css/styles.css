@@ -16,6 +16,7 @@ body {
     letter-spacing: 0.03em;
 }
 
+
 .logo {
     color: var(--accent-color);
     text-decoration: none;
@@ -29,7 +30,10 @@ body {
 }
 
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
+
 }
 
 /* Site nav */
@@ -58,22 +62,40 @@ body {
     color: var(--primary-text-color);
 }
 
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
+}
+
 /* Hero */
 
 .hero {
     background-color: var(--background-accent-color);
+    text-align: center;
 }
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    text-align: center;
+    /* text-align: center; */
     color: var(--primary-white-color);
+
+    
 }
 
 .btn-main {
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 216px;
+    text-align: center;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     border-width: 0;
@@ -83,10 +105,23 @@ body {
     line-height: 1.88;
     letter-spacing: 0.06em;
     cursor: pointer;
+    
 }
 
 /* Section */
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section.non-padding {
+    padding-top: 0;
+}
+
 .section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -97,6 +132,8 @@ body {
 /* Features */
 
 .feature-list .title {
+    margin-top: 0;
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -105,6 +142,8 @@ body {
 }
 
 .feature-list .text {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 14px;
     line-height: 1.71;
 }
@@ -112,6 +151,8 @@ body {
 /* Team */
 
 .team .title {
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -119,18 +160,34 @@ body {
 }
 
 .team .text {
+    margin-top: 0;
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.19;
 }
 
 /* Footer */
 
+
+
 .bg-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--background-accent-color);
 }
 
+.bg-footer a {
+    display: inline-block;
+}
+
+.mrg-logo {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
 .logo-footer {
- color: var(--primary-white-color);
+
+    color: var(--primary-white-color);
 }
 
 .adr-footer,
@@ -143,6 +200,7 @@ body {
 }
 
 .contacts-footer {
+    margin-top: 9px;
     color: var(--contacts-footer-color);
 }
 
@@ -156,6 +214,10 @@ body {
 /* страница Портфоліо */
 
 .btn-filter {
+    border-radius: 4px;
+    padding: 6px 25px;
+    min-width: 73px;
+    text-align: center;
     color: var(--title-text-color);
     background-color: var(--background-secondary-color);
     border-width: 0;
@@ -174,6 +236,8 @@ body {
 }
 
 .work-list .title {
+    margin-top: 20px;
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -182,8 +246,10 @@ body {
 }
 
 .work-list .text {
-font-size: 16px;
-line-height: 1.88;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.88;
 }
 
 /* цвета на странице Студія
